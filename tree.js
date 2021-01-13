@@ -1,7 +1,7 @@
 class Tree{
     constructor(x,y,width,height)
     {
-        this.body = Bodies.rectangle(x,y,width,height,{isStatic:true});
+        this.body = Bodies.rectangle(x,y,width-300,height-300,{isStatic:true});
        // this.x = x;
        // this.y = y;
         this.width =  width;
@@ -12,8 +12,9 @@ class Tree{
     }
     display()
     {
-        var posx = this.body.position;
+        var pos = this.body.position;
         imageMode(CENTER);
-        image(this.image,posx.x,posx.y,this.width,this.height);
+        image(this.image,pos.x,pos.y,this.width,this.height);
+        //rect(pos.x,pos.y,this.width,this.height);
     }
 }

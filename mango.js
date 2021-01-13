@@ -4,7 +4,7 @@ class Mango{
         var options ={
             isStatic:true,
             frcition:1,
-            restitution:0
+            restitution:0.2
         }
         this.body = Bodies.circle(x,y,r/2,options);
         this.r = r;
